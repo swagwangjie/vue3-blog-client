@@ -1,13 +1,16 @@
-<script setup lang="ts">
+<script lang="ts">
 import { RouterLink, RouterView } from "vue-router";
+import BHeader from "@/blocks/header.vue";
+export default {
+  components: {
+    BHeader,
+  },
+};
 </script>
 
 <template>
-  <div class="home">
-    <a-button type="primary">Primary Button</a-button>
-    <div class="main">123</div>
-  </div>
-  <RouterView />
+  <b-header></b-header>
+  <!-- <RouterView /> -->
 </template>
 
 <style lang="scss" scoped>
