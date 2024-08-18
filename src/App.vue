@@ -16,7 +16,7 @@ export default {
 
 <template>
   <b-header :config="appViewConfig"></b-header>
-  <!-- <RouterView /> -->
+  <router-view></router-view>
 </template>
 
 <style lang="scss" scoped>
