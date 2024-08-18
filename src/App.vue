@@ -1,15 +1,21 @@
 <script lang="ts">
 import { RouterLink, RouterView } from "vue-router";
 import BHeader from "@/blocks/header.vue";
+import { appViewConfig } from "@/view-provider/app";
 export default {
   components: {
     BHeader,
   },
+  setup() {
+    return {
+      appViewConfig
+    }
+  }
 };
 </script>
 
 <template>
-  <b-header></b-header>
+  <b-header :config="appViewConfig"></b-header>
   <!-- <RouterView /> -->
 </template>
 
