@@ -1,7 +1,7 @@
 <script>
-import { Avatar } from "ant-design-vue";
 import { defineComponent } from "vue";
 
+// defineComponent 这个api用处1：封装了setup函数，2：提供了ts的语法提示
 export default defineComponent({
   props: {
     config: {
